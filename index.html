@@ -9,13 +9,9 @@
         <a-scene embedded arjs = "debugUIEnabled: false" vr-mode="enabled : false">
             <a-marker preset="hiro">
                 <a-box position='0 1 0' material='color: purple;'></a-box>
-                <a-assets>
-                <img id="texture" src="texture.png">
-                </a-assets>
-                <!-- Basic cone. -->
-                <a-cone color="green" radius-bottom="2" radius-top="0"></a-cone>
-                <!-- Textured box. -->
-                <a-cone src="#texture"></a-cone>
+
+                <a-cone position='0 0.3 0' color="green" radius-bottom="2" radius-top="0"></a-cone>
+                <a-box position="0 1.5 0" material="src: #texture"></a-box>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
