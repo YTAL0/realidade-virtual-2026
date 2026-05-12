@@ -8,10 +8,8 @@
     <body style="margin: 0px; overflow: hidden;">
         <a-scene embedded arjs = "debugUIEnabled: false" vr-mode="enabled : false">
             <a-marker preset="hiro">
-                <a-box position='0 1 0' material='color: purple;'></a-box>
-
-                <a-cone position='0 0.3 0' color="green" radius-bottom="2" radius-top="0"></a-cone>
-                <a-box position="0 1.5 0" material="src: #texture"></a-box>
+                <a-box position='0 1.5 0' material='color: purple;'></a-box>
+                <a-cone position='0 0.3 0' color="green" radius-bottom="0.5" radius-top="0"></a-cone>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
