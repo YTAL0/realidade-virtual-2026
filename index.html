@@ -43,7 +43,10 @@
     <body style="margin: 0px; overflow: hidden;">
         <a-scene embedded arjs = "debugUIEnabled: false" vr-mode="enabled : false">
             <a-marker preset="hiro">
-                <a-model src="star.gltf" position="0 0.5 0" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-model>
+               <a-assets>
+                <a-asset-item id="model" src="star.gltf"></a-asset-item>
+                <a-entity gltf-model="#model" position="0 0.5 0" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-entity>
+               </a-assets>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
