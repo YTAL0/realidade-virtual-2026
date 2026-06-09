@@ -62,7 +62,7 @@
         <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
         <title>Expercia criando marcador RV</title>
-    </head>
+    <!-- </head>
 
     <body style="margin: 0px; overflow: hidden;">
         <a-scene embedded arjs = "debugUIEnabled: false" vr-mode="enabled : false">
@@ -77,4 +77,22 @@
             <a-entity camera></a-entity>
         </a-scene>
 
-    </body>
+    </body> -->
+
+
+            <html>
+  <head>
+    <title>Quinta experiência de RA usando o AR.js e o A-frame. Marcador Hiro e um vídeo.</title>
+     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0px; overflow: hidden">
+    <video id="videoGato" src="gato.mp4" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline muted style="display: none;"> </video>
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
+        <a-marker preset="hiro">
+        <a-video src="#videomao" width="1.7" height="1" rotation="0 -90 0"></a-video>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
